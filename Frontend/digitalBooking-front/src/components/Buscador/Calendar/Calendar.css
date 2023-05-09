@@ -1,0 +1,26 @@
+.calendar{
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 5px;
+}
+.react-datepicker-wrapper{
+    width: 35% !important;
+}
+.react-datepicker__input-container{
+    position: inherit !important;
+}
+.react-datepicker__day{
+    height: 2.5rem !important;
+    width: 2rem !important;
+}
+.react-datepicker__current-month{
+    text-transform: capitalize;
+}
+.react-datepicker__day--in-range{
+    background-color: #1DBEB4 !important;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .react-datepicker-wrapper{
+        width: 100% !important;
+    }
+}

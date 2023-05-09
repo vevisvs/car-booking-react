@@ -1,0 +1,118 @@
+.contenedorForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    flex-direction: column;
+    height: calc(100vh - 160px);
+}
+
+#register{
+    height: 75%;
+    width: 35%;
+}
+
+.nombreApellido  {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nombre-input-register{
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    background-color: #e5eeff;
+}
+
+.apellido-input-register{
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    background-color: #e5eeff;
+}
+
+.correoContraseña {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.contenedorForm h2 {
+    color: #1DBEB4;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+.inputsV2 div {
+    padding-bottom: 10px;
+}
+
+.email-register, .password-register, .confirm-register {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #e5eeff;
+    border: none;
+}
+
+.button-register{
+    background-color: #1DBEB4;
+    font-size: 16px;
+    color: #ffffff;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: #1DBEB4;
+    font-size: 15px;
+    margin-top: 1.5rem;
+}
+
+.paragrafoRegister {
+    display: flex;
+    font-size: medium;
+    justify-content: center;
+    padding-top: 10px;
+    flex-direction: row;
+    margin: 5px 0px 15px;
+    flex-direction: column;
+}
+.paragrafoRegister a{
+    color: #1DBEB4;
+    font-weight: 700;
+}
+
+.input-city-user{
+    width: 100%;
+    margin-bottom: 0.8rem;
+    background-color: #e5eeff;
+    border: none;
+}
+
+.city-options{
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px){
+    #register{
+        width: 80%;
+    }
+}
+
+@media (max-width: 426px) {
+    #register{
+        width: 80%;
+    }
+
+    .contenedorForm h2 {
+        color: #1DBEB4;
+        font-style: normal;
+        padding-bottom: 20px;
+    }
+}

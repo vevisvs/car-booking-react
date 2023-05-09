@@ -1,0 +1,140 @@
+.container-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: end;
+    font-weight: 700;
+    color: #31363f;
+}
+
+.container-1 p {
+    margin-bottom: 10px;
+}
+
+.Iniciales {
+        background: white;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+.iniciales-admin{
+    background-color: #1DBEB4;
+    color: black;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+    .P-in i {
+        display: inline;
+        padding-left: 70px;
+    }
+
+    .Nombre-ctm {
+        color: #ffff;
+    }
+
+    @media(max-width:768px){
+        .container-1{
+            background-color: #1DBEB4;
+            width: 100%;
+            height: 15%;
+            flex-direction: row-reverse;
+            text-align: start;
+            gap: 0.625rem;
+        }
+
+        .Iniciales{
+            position: absolute;
+            left: 520px;
+            padding: 2rem;
+        }
+
+        .container-1 span{
+            font-size: 2rem;
+        }
+
+        .P-in{
+            position: absolute;
+            height: fit-content;
+            padding: 0.8rem;
+            font-size: 1.5rem;
+        }
+
+        .close-menu i{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .visibility a{
+            position: absolute;
+            right: 300px;
+            bottom: 850px;
+        }
+
+        .iniciales-admin{
+            /* display: none; */
+            position: absolute;
+            left: 500px;
+        }
+
+        .route-admin a{
+            position: absolute;
+            top: 60px;
+            color:#31363f;
+            font-size: 26px;
+        }
+
+    }
+
+    @media screen and (max-width: 426px){
+        .Iniciales{
+            position: absolute;
+            left: 170px;
+            padding: 2rem;
+        }
+
+        .container-1 span{
+            font-size: 1.5rem;
+        }
+
+        .iniciales-admin{
+            display: none;
+        }
+
+        .route-admin a{
+            position: absolute;
+            top: 50px;
+            right: 220px;
+            font-size: 20px;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .container-1 {
+        flex-direction: row;
+        text-align: start;
+        gap: 0.625rem;
+        color: #1DBEB4;
+        }
+        .Iniciales {
+        background-color: #31363f;
+        color: #ffff;
+        display: flex;
+        }
+        .Nombre-ctm {
+        color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    

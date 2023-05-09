@@ -1,0 +1,736 @@
+{
+	"info": {
+		"_postman_id": "28a306c0-ae08-4b5c-8ac4-984e12b3ff0c",
+		"name": "Digital Booking Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23248616"
+	},
+	"item": [
+		{
+			"name": "Model (Vehiculos)",
+			"item": [
+				{
+					"name": "Model Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"500\",\r\n  \"description\": \"El fiat 500 es un vehiculo es vehiculo pequeno\",\r\n  \"brand\": \"Fiat\",\r\n  \"score\": 8.2,\r\n  \"images\": [\r\n    {\r\n      \"name\": \"Fiat 500\",\r\n      \"url\": \"https://images.unsplash.com/photo-1536667842290-7602f6a43a2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\r\n    }\r\n  ],\r\n  \"characteristics\": [\r\n    1,2,3,4\r\n  ],\r\n  \"id_City\": 1,\r\n  \"id_Categorie\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/model/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"model",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/model/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"model",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model Search ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/model/search/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"model",
+								"search",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model Search Categorie Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/model/searchNameByCategorie/De lujo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"model",
+								"searchNameByCategorie",
+								"De lujo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model Search City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/model/searchCity/Cordoba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"model",
+								"searchCity",
+								"Cordoba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model Modify Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"UPDATE 14\",\r\n  \"description\": \"UPDATEEEE CATORCEEEE\",\r\n  \"brand\": \"MARCA UPDATE\",\r\n  \"score\": 8.2,\r\n  \"images\": [\r\n    {\r\n      \"name\": \"NOMBRE UPDATE\",\r\n      \"url\": \"string\"\r\n    }\r\n  ],\r\n  \"characteristics\": [\r\n    1,2,3\r\n  ],\r\n  \"id_City\": 2,\r\n  \"id_Categorie\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/model/modify/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"model",
+								"modify",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Model Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/model/delete/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"model",
+								"delete",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "City List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/city/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "City Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"La Paz\",\r\n  \"country\": \"Bolivia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/city/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "City Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/city/delete/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"city",
+								"delete",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Categorie List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categorie/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorie",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categoria Search Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categorie/searchName/De lujo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorie",
+								"searchName",
+								"De lujo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categorie Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Motos\",\r\n  \"description\": \"motos\",\r\n  \"url\": \"messi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/categorie/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorie",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categorie Modify",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Aviones\",\r\n  \"description\": \"aviones\",\r\n  \"url\": \"messi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/categorie/modify/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorie",
+								"modify",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Categorie Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categorie/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categorie",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Search ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/search/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"search",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Search Email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/searchEmail/pepito@example.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"searchEmail",
+								"pepito@example.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Search Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/searchName/pepito",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"searchName",
+								"pepito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"stringPrueba\",\r\n  \"lastName\": \"string\",\r\n  \"email\": \"stringsss@example.com\",\r\n  \"password\": \"stringsss\",\r\n  \"roleId\": 1,\r\n  \"id_City\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user/delete/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"delete",
+								"20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Images",
+			"item": [
+				{
+					"name": "Image List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/image/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"image",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Image Search ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/image/search/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"image",
+								"search",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Image Search Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/image/searchName/Porsche 911 Carrera S (5)",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"image",
+								"searchName",
+								"Porsche 911 Carrera S (5)"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Booking List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/booking/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Search ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/booking/search/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"search",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Search Model ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/booking/searchModelId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"searchModelId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Search Client ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/booking/searchClientId/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"searchClientId",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Search From City and Booking",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/booking/available-models?cityName=Buenos Aires&startDate=2023-04-22&endDate=2023-04-23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"available-models"
+							],
+							"query": [
+								{
+									"key": "cityName",
+									"value": "Buenos Aires"
+								},
+								{
+									"key": "startDate",
+									"value": "2023-04-22"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-04-23"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Booking Search From Dates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/booking/available-modelsByDate?startDate=2023-04-22&endDate=2023-04-23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"booking",
+								"available-modelsByDate"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2023-04-22"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-04-23"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

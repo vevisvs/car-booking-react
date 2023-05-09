@@ -1,0 +1,10 @@
+select{
+    width: 35%;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+@media(min-width:320px)and (max-width:767px){
+    select{
+        width: 100%;
+    }
+}

@@ -1,0 +1,107 @@
+.Contenedor-Galeria{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.Container-pds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    width: 80%;
+    height: 400px;
+}
+
+.Container-pds img {
+    border-radius: 8px;
+    width: 80%; 
+    z-index: 10;
+}
+
+.ctn-loader-carousel{
+    border: 1px solid transparent;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-image{
+    width: 50%;
+}
+
+.first-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.secondary-images{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    flex-wrap: wrap; */
+}
+
+.secondary-images img{
+    width: 49%;
+    object-fit: cover;
+}
+
+.top-images img{
+    margin: 0 1px 0 3px;
+    height: 200px;
+}
+
+.bottom-images img{
+    margin: 0 1px 0 3px;
+    height: 200px;
+}
+
+.VerMas {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+}
+
+.Carousel-css{
+    z-index: 4;
+    width: 540px;
+    height: 439px;
+    position: absolute;
+    right: 400px;
+}
+.Carousel-css i {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.Container-pds{
+    z-index: 3;
+}
+
+
+@media screen and (min-width: 769px) {
+    .Contenedor-Galeria{
+        display: flex;
+    }
+
+    .secondary-images img{
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Contenedor-Galeria{
+        display: none;
+        visibility: hidden;
+    }
+}

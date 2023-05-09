@@ -1,0 +1,149 @@
+.contenedorPadre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    flex-direction: column;
+    height: calc(100vh - 160px);
+}
+
+.contenedorPadre h2 {
+    color: #1DBEB4;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+.inputs div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin: 0.8rem;
+    background-color: rgb(232, 240, 254);
+}
+
+.contenedorPadre .inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+}
+
+.inputs input {
+    width: 448px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.inputs div label {
+    display: flex;
+    color: #383B58;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1DBEB4;
+    color: #ffffff;
+    width: 206px;
+    height: 40px;
+    border-radius: 5px;
+    border: #1DBEB4;
+    font-size: 15px;    
+    margin-top: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.paragrafo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    background-color: transparent !important;
+}
+
+.paragrafo a{
+    color:#1DBEB4;
+    font-weight: 700;
+}
+
+.ctn-message{
+    width: 400px;
+    margin-bottom: 2rem; 
+    color: rgb(243, 16, 16);
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: rgb(243, 215, 215);
+    display: flex;
+    justify-content: space-around;
+}
+
+.error-message{
+    color: red;
+}
+
+@media (max-width: 426px) {
+    .contenedorPadre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #ffffff;
+        flex-direction: column;
+    }
+    
+    .contenedorPadre h2 {
+        color: #1DBEB4;
+        font-style: normal;
+        padding-bottom: 20px;
+    }
+
+    .ctn-message{
+        width: 70%;
+    }
+    
+    .inputs div {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    
+    .inputs input {
+        width: 300px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    .inputs div label {
+        display: flex;
+        color: #383B58;
+    }
+
+    .boton {
+        background-color: #1DBEB4;
+        color: #ffffff;
+        width: 206px;
+        height: 40px;
+        border-radius: 5px;
+        border: #1DBEB4;
+        font-size: 15px;
+    }
+    
+    .inputs .paragrafo {
+        display: flex;
+        font-size: small;
+        justify-content: center;
+        padding-top: 10px;
+        flex-direction: row;
+        margin: 5px 0px 15px;
+    }
+}
+
+

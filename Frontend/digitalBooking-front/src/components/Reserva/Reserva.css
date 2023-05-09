@@ -1,0 +1,400 @@
+/*--------- header -------------- */
+.ctn-booking-header{
+    background-color: #545776;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+}
+
+.icon-header{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* ------ aspectos generales -----*/
+
+.booking-sections{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(224, 221, 221);
+}
+
+.booking-forms{
+    width: 60%;
+    height: 94%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form-input{
+    background-color: rgb(88, 168, 168, 0.3);
+    border: transparent;
+    border-radius: 5px;
+    padding: 0.6rem;
+    width: 100%;
+}
+
+/* Formulario */
+
+.ctn-form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    margin-bottom: 2rem;
+}
+
+.ctn-form h2{
+    color: #545776;
+}
+
+.ctn-form-info{
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-row-names{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 100%;
+}
+
+.row-name{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.row-lastname{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.form-row-contact{
+    display: flex;
+    height: 50%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.row-email{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 40%;
+}
+
+.row-city{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+
+/*------------ Calendar booking -----------*/
+
+.ctn-calendar-booking{
+    margin-bottom: 2rem;
+}
+
+.ctn-calendar-booking h2{
+    color: #545776;
+    padding: 1rem;
+}
+
+/* --------------- horarios --------------- */
+
+.ctn-reservation-hours{
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.selection-hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    height: 150px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ctn-reservation-hours h2, h4{
+    color: #545776;
+}
+
+.hours-check{
+    border: 0.2px solid grey;
+}
+
+
+/*---------- Detalle de la reserva --------*/
+
+.booking-sections{
+    display: flex;
+    align-items: center;
+}
+
+.booking-details{
+    width: 30%;
+    background-color: rgb(252, 252, 252);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 880px;
+}
+
+.reservation-details{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.reservation-details h2{
+    color: #545776;
+}
+
+.detail-prod-image{
+    width: 100%;
+    height: 300px;
+}
+
+.product-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.box-information{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-title-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box-title-image h2{
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.box-information .details-info{
+    height: 25%;
+    padding: 1rem;
+    width: 100%;
+}
+
+.box-information .info-checking{
+    width: 100%;
+    padding: 1rem;
+}
+
+.details-info{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.8rem;
+}
+
+.ctn-score{
+    color: rgb(228, 207, 17);
+}
+
+.city-details{
+    padding-top: 1.5rem;
+}
+.details-info h2, h5{
+    color: #545776;
+}
+
+.ctn-button-reserv{
+    width: 90%;
+}
+
+.btn-reservation{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #1DBEB4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.info-checking{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-checking hr{
+    border-top: 1px solid black;
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 20px 
+}
+
+.checks{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #545776;
+}
+
+.error-booking{
+    color: rgb(243, 16, 16);
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 1rem;
+    background-color: rgb(241, 192, 192);
+}
+
+
+@media screen and (min-width: 630px) and (max-width: 1000px){
+
+    .booking-forms{
+        width: 100%;
+    }
+
+    .booking-sections{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ctn-calendar-booking{
+        height: 47%;
+    }
+
+    .ctn-reservation-hours{
+        height: 25%;
+    }
+
+    .booking-details{
+        width: 100%;
+        height: 480px;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .reservation-details{
+        flex-direction: row;
+        padding: 1rem;
+        height: 500px;
+    }
+
+    .box-title-image{
+        width: 55%;
+    }
+
+    .box-information{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 629.98px){
+    .booking-sections{
+        flex-direction: column;
+    }
+
+    .booking-forms{
+        width: 100%;
+    }
+
+    .ctn-form{
+        height: 440px;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
+    .ctn-form-info{
+        width: 100%;
+        margin-top: 1rem;
+        height: 100%;
+    }
+
+    .row-name, .row-lastname, .row-email, .row-city{
+        width: 100%;
+    }
+
+    .form-input{
+        width: 100%;
+    }
+    .form-row-names{
+        flex-direction: column;
+    }
+
+    .form-row-contact{
+        flex-direction: column;
+        margin-top: -15px;
+    }
+
+    .booking-calendar-ctn{
+        width: 60%;
+        display: flex;
+    }
+
+    .ctn-calendar-booking h2{
+        text-align: center;
+    }
+
+    .booking-details{
+        width: 100%;
+    }
+
+    .box-title-image{
+        height: 30%;
+    }
+
+    .box-title-image h2{
+        text-align: center;
+    }
+
+    .box-information{
+        width: 95%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-title-image h2{
+        padding: 1rem;
+    }
+}
+

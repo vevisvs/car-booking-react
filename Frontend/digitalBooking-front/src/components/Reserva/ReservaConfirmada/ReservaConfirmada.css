@@ -1,0 +1,54 @@
+.ctn-reserva-confirm{
+    height: 100vh;
+    display: flex;
+    background-color: rgb(240, 237, 237);
+    justify-content: center;
+    align-items: center;
+}
+
+.section-confirm{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.reserva-confirm-icon{
+    width: 10%;
+}
+
+.reserva-confirm-button{
+    width: 25%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    background-color:  #1DBEB4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: transparent;
+}
+
+.reserva-confirm-button:hover{
+    background-color: rgb(93, 197, 197);
+}
+
+@media screen and (max-width: 768px){
+    .section-confirm{
+        width: 60%;
+        height: 45%;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .section-confirm{
+        width: 80%;
+        font-size: 14px;
+    }
+}
